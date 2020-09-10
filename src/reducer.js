@@ -1,5 +1,6 @@
 export const initialState = {
   basket: [],
+  user: null,
 };
 //selector
 
@@ -15,6 +16,25 @@ const reducer = (state, action) => {
       };
       default: 
         return state;
+    case "REMOVE_FROM_BASKET":
+      const index = state.basket.findIndex(
+        (basketItem)  => basketItem.id === action.id
+      );
+      console.log(action.id)
+      let newBasket = [...state.basket];
+      if (index >= 0){
+        newBasket.splice(index, 1);
+      } else {
+        console.warn('Already removed (id: ${action.id})')
+      }
+      return {
+        ...state,
+        basket: newBasket
+      }
+    case 'SET_USER':
+      return {
+        ...state, user: action.user
+      }
   }
 };
 
