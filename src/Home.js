@@ -15,20 +15,7 @@ function Home() {
           alt=""
         />
         <div className="home__row">
-          <Product
-          id="1"
-            title="Apple iPhone 11 Pro Max (64GB) - Midnight Green"
-            price={999999}
-            image="https://images-na.ssl-images-amazon.com/images/I/61ers6OzvUL._SL1024_.jpg"
-            rating={4}
-          />
-          <Product
-           id="2"
-            title="Samsung Galaxy S10 (Black, 8GB RAM, 128GB Storage)"
-            price={(49999)}
-            image="https://images-na.ssl-images-amazon.com/images/I/61-snTeMjoL._SL1500_.jpg"
-            rating={5}
-          />
+         
           <Product
            id="522"
             title="Acnos 5 Stylist Diamond and Simple Analog Watches Combo for Women Pack -5(nissna)"
@@ -48,7 +35,7 @@ function Home() {
           <Product
            id="3"
             title="Lenovo Tab M10 Tablet (10.1 inch, 16GB, Wi-Fi + 4G LTE), Slate Black"
-            price={(14250)}
+            price={(7050)}
             image="https://images-na.ssl-images-amazon.com/images/I/61ul3f89uDL._SL1338_.jpg"
             rating={3}
           />
@@ -63,7 +50,7 @@ function Home() {
            id="5"
             title="Canon EOS 1500D 24.1 Digital SLR Camera (Black) with EF S18-55 is II Lens, 16GB Card and Carry Case
 "
-            price={(34499)}
+            price={(10499)}
             image="https://images-na.ssl-images-amazon.com/images/I/914hFeTU2-L._SL1500_.jpg"
             rating={2}
           />
@@ -72,7 +59,7 @@ function Home() {
           <Product
            id="6"
             title="Onida 80 cm (32 Inches) Fire TV Edition HD Ready Smart IPS LED TV 32HIF (Black) (2019)"
-            price={(14199)}
+            price={(6199)}
             image="https://images-na.ssl-images-amazon.com/images/I/81bNwWF3Z2L._SL1500_.jpg"
             rating={4}
           />
