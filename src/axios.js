@@ -2,7 +2,7 @@ import axios from "axios";
 
 
 const instance = axios.create({
-    baseURL: 'http://localhost:5001/femshopi/us-central1/api/',
+    baseURL: 'https://sleepy-dawn-34743.herokuapp.com/',
   });
   
 export default instance;  
