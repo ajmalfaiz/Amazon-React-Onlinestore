@@ -56,5 +56,9 @@
 }
 .header__basketCount {
   margin-left: 10px;
-  margin-right: 10px;
+  margin-right: 15px;
+}
+.header__checkoutButton{
+  display: flex;
+  align-items: center;
 }

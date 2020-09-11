@@ -5,6 +5,9 @@ import Product from "./Product";
 function Home() {
   return (
     <div className="home">
+      <div className="home__header">
+        {/* TODO: Navbar for home */}
+      </div>
       <div className="home__container">
         <img
           className="home__image"
@@ -25,6 +28,20 @@ function Home() {
             price={(49999)}
             image="https://images-na.ssl-images-amazon.com/images/I/61-snTeMjoL._SL1500_.jpg"
             rating={5}
+          />
+          <Product
+           id="522"
+            title="Acnos 5 Stylist Diamond and Simple Analog Watches Combo for Women Pack -5(nissna)"
+            price={(379)}
+            image="https://images-na.ssl-images-amazon.com/images/I/61EoPV5gtcL._UL1100_.jpg"
+            rating={5}
+          />
+          <Product
+           id="899"
+            title="Designer Combo of 2 Analog Watches for Boys and Girls"
+            price={(339)}
+            image="https://images-na.ssl-images-amazon.com/images/I/619O%2BPpEUxL._UL1500_.jpg"
+            rating={4}
           />
         </div>
         <div className="home__row">

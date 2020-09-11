@@ -1,6 +1,7 @@
 import React, { forwardRef } from "react";
 import "./CheckoutProduct.css";
 import { useStateValue } from "./StateProvider";
+import Button from '@material-ui/core/Button';
 
 const CheckoutProduct = forwardRef(({id, image, title, price, rating}, ref) => {
   const [{basket}, dispatch] = useStateValue();
@@ -22,12 +23,12 @@ const CheckoutProduct = forwardRef(({id, image, title, price, rating}, ref) => {
         </p>
         <div className="checkoutProduct__rating">
           {Array(rating)
-            .fill()
+            .fill() 
             .map((_, i) => (
-              <p>🌟</p>
+              <p>⭐</p>
             ))}
         </div>
-        <button onClick={removeFromBasket}>Remove from Basket</button>
+        <Button onClick={removeFromBasket}>Remove from Basket</Button>
       </div>
     </div>
   );

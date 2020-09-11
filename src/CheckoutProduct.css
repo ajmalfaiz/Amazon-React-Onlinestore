@@ -2,6 +2,9 @@
     display: flex;
     margin-top: 20px;
     margin-bottom: 20px;
+    border: 1px solid #a88734;
+    align-items: center;
+    padding-left: 2%;
 }
 .checkoutProduct__info {
     padding-left: 20px;
