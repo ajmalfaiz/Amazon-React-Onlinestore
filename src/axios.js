@@ -5,4 +5,4 @@ const instance = axios.create({
     baseURL: 'http://localhost:5001/femshopi/us-central1/api/',
   });
   
-export default instance;
+export default instance;  

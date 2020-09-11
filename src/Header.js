@@ -5,7 +5,7 @@ import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
 import { Link } from "react-router-dom";
 import { useStateValue } from "./StateProvider";
 import { auth } from "./firebase";
-import Badge from '@material-ui/core/Badge';
+import Badge from "@material-ui/core/Badge";
 
 function Header() {
   const [{ basket, user }, dispatch] = useStateValue();
@@ -25,7 +25,12 @@ function Header() {
       </Link>
 
       <div className="header__search">
-        <input type="text" className="header__searchInput" placeholder="Enter product or categories" type="text" />
+        <input
+          type="text"
+          className="header__searchInput"
+          placeholder="Enter product or categories"
+          type="text"
+        />
         <SearchIcon className="header__searchIcon" />
       </div>
       <div className="header__nav">
@@ -39,18 +44,24 @@ function Header() {
             </span>
           </div>
         </Link>
+        <Link to="/orders">
+          <div className="header__option">
+            <span className="header__optionOne">Returns</span>
+            <span className="header__optionTwo">& Orders</span>
+          </div>
+        </Link>
 
-        <div className="header__option">
-          <span className="header__optionOne">Returns</span>
-          <span className="header__optionTwo">& Orders</span>
-        </div>
         <div className="header__option">
           <span className="header__optionOne">Your</span>
           <span className="header__optionTwo">Prime</span>
         </div>
         <Link to="/checkout" className="header__checkoutButton">
           <div className="header__optionBasket">
-            <Badge className="header__optionTwo header__basketCount" badgeContent={basket?.length} color="primary">
+            <Badge
+              className="header__optionTwo header__basketCount"
+              badgeContent={basket?.length}
+              color="primary"
+            >
               <ShoppingCartIcon />
             </Badge>
             {/* <span className="header__optionTwo header__basketCount"></span> */}
