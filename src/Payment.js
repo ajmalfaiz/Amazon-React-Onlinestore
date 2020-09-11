@@ -34,6 +34,7 @@ function Payment() {
       setClientSecret(response.data.clientSecret);
     };
   }, [basket]);
+  console.log('secret',clientSecret)
 
   const handleSubmit = async (e) => {
     // stripe stuff
